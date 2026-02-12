@@ -1,18 +1,37 @@
 body {
     width: 100%;
     margin: 10px;
+    background-color: rgb(5, 61, 114);
 }
 
 .nav-links {
     display: flex;
-    gap: 16px;
     list-style: none;
-    padding: 2px;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+    height: 70px;
+    justify-content: space-between;
 }
+
 
 a {
     text-decoration: none;
-    color: #0077cc;
+    color: white;
+}
+
+.nav-links a:hover {
+    background-color: rgb(146, 89, 4);
+    display: inline-block;
+    padding: 10px 15px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    transform-origin: center;
+}
+
+.nav-links a:hover {
+    transform: scale(1.08);
+    /* small scale only */
 }
 
 .logo {
@@ -21,10 +40,11 @@ a {
     font-size: larger;
 }
 
-/* .hero {
+.hero-image {
     width: 100%;
-    margin: 0;
-} */
+    height: 700px;
+    overflow: hidden;
+}
 
 
 .header-container {
@@ -34,6 +54,7 @@ a {
     flex-wrap: wrap;
     width: 100%;
     height: fit-content;
+    background-color: rgb(30, 30, 131);
 }
 
 .hero-container {
@@ -47,6 +68,13 @@ a {
 .hero-image {
     flex: 1 1 400px;
     padding: 2px;
+    color: white;
+}
+
+.info,
+.quote {
+    color: white;
+    font-weight: bold;
 }
 
 .hero-image img {
@@ -79,4 +107,9 @@ a {
 
 .footer {
     padding: 20px;
+}
+
+.author {
+    font-weight: bold;
+    fon
 }
